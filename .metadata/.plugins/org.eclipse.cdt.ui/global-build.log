@@ -1,0 +1,23 @@
+23:44:32 **** Incremental Build of configuration Debug for project CocoaLib ****
+make -r all 
+Building file: ../src/CocoaLib.cpp
+Invoking: MCU C++ Compiler
+arm-none-eabi-c++ -std=gnu++1z -D__NEWLIB__ -DDEBUG -DDONT_ENABLE_SWVTRACECLK -DCORE_M3 -DCPP_USE_HEAP -D__LPC15XX__ -I"/mnt/Chocolate/portfolio/CocoaLib/CocoaLib/chip/inc" -I"/mnt/Chocolate/portfolio/CocoaLib/CocoaLib/cocoa" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -MMD -MP -MF"src/CocoaLib.d" -MT"src/CocoaLib.o" -MT"src/CocoaLib.d" -o "src/CocoaLib.o" "../src/CocoaLib.cpp"
+Finished building: ../src/CocoaLib.cpp
+ 
+Building target: CocoaLib.axf
+Invoking: MCU C++ Linker
+arm-none-eabi-c++ -nostartfiles -nostdlib -Xlinker -Map="CocoaLib.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "CocoaLib_Multiple_configurations.ld" -o "CocoaLib.axf"  ./src/CocoaLib.o  ./cocoa/util/xstring/xstring.o  ./cocoa/util/math/fix.o ./cocoa/util/math/fixMath.o  ./cocoa/util/text.o ./cocoa/util/type.o  ./cocoa/driver/comm/I2C.o ./cocoa/driver/comm/SPI.o ./cocoa/driver/comm/uart.o ./cocoa/driver/comm/usb.o  ./cocoa/driver/AnalogIn.o ./cocoa/driver/DigitalIO.o ./cocoa/driver/PWM.o ./cocoa/driver/systick.o ./cocoa/driver/timer.o  ./chip/src/CdcDesc.o ./chip/src/acmp_15xx.o ./chip/src/adc_15xx.o ./chip/src/chip_15xx.o ./chip/src/clock_15xx.o ./chip/src/cr_startup_lpc15xx.o ./chip/src/crc_15xx.o ./chip/src/dac_15xx.o ./chip/src/dma_15xx.o ./chip/src/eeprom.o ./chip/src/gpio_15xx.o ./chip/src/i2c_common_15xx.o ./chip/src/i2cm_15xx.o ./chip/src/i2cs_15xx.o ./chip/src/iap.o ./chip/src/iocon_15xx.o ./chip/src/pinint_15xx.o ./chip/src/pmu_15xx.o ./chip/src/ring_buffer.o ./chip/src/ritimer_15xx.o ./chip/src/rtc_15xx.o ./chip/src/sct_15xx.o ./chip/src/sct_pwm_15xx.o ./chip/src/sctipu_15xx.o ./chip/src/spi_15xx.o ./chip/src/stopwatch_15xx.o ./chip/src/swm_15xx.o ./chip/src/sysctl_15xx.o ./chip/src/sysinit_15xx.o ./chip/src/uart_15xx.o ./chip/src/wwdt_15xx.o   
+Memory region         Used Size  Region Size  %age Used
+       MFlash256:       11860 B       256 KB      4.52%
+         Ram0_16:        2368 B        16 KB     14.45%
+         Ram1_16:          0 GB        16 KB      0.00%
+          Ram2_4:          0 GB         4 KB      0.00%
+Finished building target: CocoaLib.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "CocoaLib.axf"; # arm-none-eabi-objcopy -v -O binary "CocoaLib.axf" "CocoaLib.bin" ; # checksum -p LPC1549 -d "CocoaLib.bin";
+   text	   data	    bss	    dec	    hex	filename
+  11744	    116	   2248	  14108	   371c	CocoaLib.axf
+ 
