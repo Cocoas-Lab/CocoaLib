@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/CocoaLib/src/cr_cpp_config.cpp" element2="/CocoaLib/src/cr_startup_lpc15xx.cpp" element3="/CocoaLib/src/crp.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1574604275211"/>
-</session>
