@@ -8,6 +8,8 @@ PREFIX = "aaaa"
 def toRelative(command):
     end = command.rfind('CocoaLib')
     first = command.rfind('-I"',0, end)
+    if first == -1 or end == -1:
+        return command
     PREFIX = command[first + len('-I"'):end + len('CocoaLib/')]
     print(PREFIX)
     return command.replace(PREFIX, '../', 2)

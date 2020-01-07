@@ -449,7 +449,7 @@ errno               0x4               /usr/local/lpcxpresso_8.2.2_650/lpcxpresso
 Discarded input sections
 
  .text          0x00000000        0x0 ./src/CocoaLib.o (symbol from plugin)
- .data          0x00000000        0x0 /tmp/cc9N16aL.ltrans0.ltrans.o
+ .data          0x00000000        0x0 /tmp/ccwRNeic.ltrans0.ltrans.o
  .text          0x00000000        0x0 ./cocoa/util/xstring/xstring.o (symbol from plugin)
  .gnu.linkonce.t._ZNSt11char_traitsIcE4copyEPcPKcj
                 0x00000000        0x0 ./cocoa/util/xstring/xstring.o (symbol from plugin)
@@ -12017,7 +12017,7 @@ Ram2_4           0x02008000         0x00001000         xrw
 Linker script and memory map
 
 LOAD ./src/CocoaLib.o
-LOAD /tmp/cc9N16aL.ltrans0.ltrans.o
+LOAD /tmp/ccwRNeic.ltrans0.ltrans.o
 LOAD ./cocoa/util/xstring/xstring.o
 LOAD ./cocoa/util/math/fix.o
 LOAD ./cocoa/util/math/fixMath.o
@@ -12096,7 +12096,7 @@ END GROUP
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
- .isr_vector    0x00000000       0xfc /tmp/cc9N16aL.ltrans0.ltrans.o
+ .isr_vector    0x00000000       0xfc /tmp/ccwRNeic.ltrans0.ltrans.o
                 0x00000000                g_pfnVectors
                 0x000000fc                . = ALIGN (0x4)
                 0x000000fc                __section_table_start = .
@@ -12122,15 +12122,15 @@ END GROUP
                 0x00000138                __section_table_end = .
  *(.after_vectors*)
  .after_vectors
-                0x00000138       0x68 /tmp/cc9N16aL.ltrans0.ltrans.o
+                0x00000138       0x68 /tmp/ccwRNeic.ltrans0.ltrans.o
                 0x0000014a                ResetISR
  *(.text*)
- .text          0x000001a0      0x3ac /tmp/cc9N16aL.ltrans0.ltrans.o
+ .text          0x000001a0      0x3ac /tmp/ccwRNeic.ltrans0.ltrans.o
                 0x000004ca                std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
                 0x00000506                std::char_traits<char>::compare(char const*, char const*, unsigned int)
                 0x00000510                std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
                 0x00000542                std::char_traits<char>::copy(char*, char const*, unsigned int)
- .text.startup  0x0000054c      0x21c /tmp/cc9N16aL.ltrans0.ltrans.o
+ .text.startup  0x0000054c      0x21c /tmp/ccwRNeic.ltrans0.ltrans.o
  .text.__aeabi_atexit
                 0x00000768        0xa /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-aeabi_atexit.o)
                 0x00000768                __aeabi_atexit
@@ -12259,7 +12259,7 @@ END GROUP
                 0x000010cc       0x18 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_newlib_semihost.a(_cr_check_heap.o)
                 0x000010cc                __check_heap_overflow
  *(.rodata .rodata.* .constdata .constdata.*)
- .rodata        0x000010e4       0x1c /tmp/cc9N16aL.ltrans0.ltrans.o
+ .rodata        0x000010e4       0x1c /tmp/ccwRNeic.ltrans0.ltrans.o
  .rodata.str1.1
                 0x00001100      0x1c4 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(string-inst.o)
  .rodata.__sf_fake_stdin
@@ -12288,7 +12288,7 @@ END GROUP
                 0x00001334                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00001334        0x4 /tmp/cc9N16aL.ltrans0.ltrans.o
+ .init_array    0x00001334        0x4 /tmp/ccwRNeic.ltrans0.ltrans.o
  .init_array    0x00001338        0x4 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(locale-inst.o)
  .init_array    0x0000133c        0x4 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(cxx11-locale-inst.o)
  .init_array    0x00001340        0x4 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(wlocale-inst.o)
@@ -12406,7 +12406,7 @@ END GROUP
 .bss            0x02000068      0x57c
                 0x02000068                _bss = .
  *(.bss*)
- .bss           0x02000068      0x4ac /tmp/cc9N16aL.ltrans0.ltrans.o
+ .bss           0x02000068      0x4ac /tmp/ccwRNeic.ltrans0.ltrans.o
  .bss._ZN12_GLOBAL__N_113__new_handlerE
                 0x02000514        0x4 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(new_handler.o)
  .bss._ZGVNSt7collateIcE2idE
@@ -12567,7 +12567,7 @@ END GROUP
 OUTPUT(CocoaLib.axf elf32-littlearm)
 
 .comment        0x00000000       0xdc
- .comment       0x00000000       0x6e /tmp/cc9N16aL.ltrans0.ltrans.o
+ .comment       0x00000000       0x6e /tmp/ccwRNeic.ltrans0.ltrans.o
                                  0x6f (size before relaxing)
  .comment       0x0000006e       0x6e /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_newlib_semihost.a(_cr_sbrk.o)
                                  0x6f (size before relaxing)
@@ -12579,7 +12579,7 @@ OUTPUT(CocoaLib.axf elf32-littlearm)
 .ARM.attributes
                 0x00000000       0x31
  .ARM.attributes
-                0x00000000       0x31 /tmp/cc9N16aL.ltrans0.ltrans.o
+                0x00000000       0x31 /tmp/ccwRNeic.ltrans0.ltrans.o
  .ARM.attributes
                 0x00000031       0x2d /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-aeabi_atexit.o)
  .ARM.attributes
