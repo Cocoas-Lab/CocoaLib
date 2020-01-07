@@ -1,3 +1,9 @@
-.metadata/*
-CocoaLib/Debug/*
-CocoaLib/Release/*
+.metadata
+CocoaLib/Debug
+CocoaLib/Release
+CocoaLib/.settings
+*.d
+*.o
+*.bin
+*.hex
+*.axf
