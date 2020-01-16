@@ -36,7 +36,7 @@ namespace Driver{
 			return CurrentTick() / 100;
 		}
 
-		void __DelayUs(const uint64_t _us){
+		void DelayUs(const uint64_t _us){
 			ClearTick();
 			while(CurrentTickUs() <= (_us / 10)){
 				// __NOP()だとCPUが止まるから
