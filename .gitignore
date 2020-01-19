@@ -1,7 +1,7 @@
 .metadata
-CocoaLib/Debug
-CocoaLib/Release
-CocoaLib/.settings
+Debug
+Release
+.settings
 *.d
 *.o
 *.bin
