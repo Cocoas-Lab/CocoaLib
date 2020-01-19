@@ -5,7 +5,7 @@ build:
     - script:
       name: set environment
       code: |
-          export PATH=$PATH:/usr/loModifyMakeFile.pycal/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin:/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/games:/usr/local/games:/snap/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin:/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/games:/usr/local/games:/snap/bin
+          export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin:/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/games:/usr/local/games:/snap/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/bin:/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin:/bin:/usr/bin:/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/games:/usr/local/games:/snap/bin
           cp -r makefiles build
           cd build
           python3.8 ModifyMakeFile.py
@@ -22,9 +22,9 @@ build:
         make -j12
 
   after-steps:
-      #    - slack-notifier:
-      #      url:  $SLACK_WEBHOOK_URL
-      #      notify_on: failed
+          - slack-notifier:
+            url:  $SLACK_WEBHOOK_URL
+            notify_on: failed
 
       #static-validations:
       #  steps:
